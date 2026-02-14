@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshmi Poojitha's Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a2e;
+            color: #f0f4f8;
+        }
+
+        .card {
+            background-color: #2c2c47;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #3c3c5c;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0,0,0,0.5);
+        }
+
+        .section-heading {
+            border-bottom: 2px solid #00FFFF;
+            display: inline-block;
+            padding-bottom: 4px;
+            color: #f0f4f8;
+        }
+
+        .message-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .message-box.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Notification Message Box -->
+    <div id="messageBox" class="message-box bg-green-500 text-white hidden"></div>
+
+    <!-- Navbar -->
+    <header class="shadow-lg bg-gray-900 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-white">Lakshmi Poojitha Patchipulusu</div>
+            <nav class="hidden md:flex space-x-6 text-gray-300 font-medium">
+                <a href="#about" class="hover:text-teal-400 transition duration-150">About</a>
+                <a href="#projects" class="hover:text-teal-400 transition duration-150">Projects</a>
+                <a href="#skills" class="hover:text-teal-400 transition duration-150">Skills</a>
+                <a href="#experience" class="hover:text-teal-400 transition duration-150">Experience</a>
+                <a href="#certifications" class="hover:text-teal-400 transition duration-150">Certifications</a>
+                <a href="#contact" class="hover:text-teal-400 transition duration-150">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="bg-[#1a1a2e] text-white pt-20 pb-24 md:pt-32 md:pb-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <img class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-teal-400 object-cover shadow-2xl" 
+             src="https://placehold.co/128x128/00FFFF/1a1a2e?text=LP" alt="Profile Picture">
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-4 leading-snug">
+            LAKSHMI POOJITHA PATCHIPULUSU
+        </h1>
+        <!-- Typing Text -->
+        <p class="text-xl sm:text-2xl font-light text-gray-300 mb-10">
+            <span id="typing"></span>
+        </p>
+        <div class="flex justify-center space-x-4">
+            <a href="https://linkedin.com/in/lakshmi-poojitha-patchipulusu-5152992a7" target="_blank" 
+               class="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300">
+                LinkedIn
+            </a>
+            <a href="https://github.com/Poojitha1293" target="_blank" 
+               class="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300">
+                GitHub
+            </a>
+            <a href="https://drive.google.com/file/d/1dM_kdt5M3iZTHD8xKyE-ISI7tv98QLph/view?usp=drive_link" target="_blank" 
+               class="inline-block border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300">
+                Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Typed.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Typed("#typing", {
+            strings: [
+                "💻 IT Student",
+                "👨‍💻 Programmer",
+                "🌐 Web Developer",
+                "⚡ Data Structures Enthusiast"
+            ],
+            typeSpeed: 70,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+        });
+    });
+</script>
+
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- About Section -->
+<section id="about" class="bg-[#2c2c47] text-white py-16">
+  <div class="max-w-5xl mx-auto px-6 lg:px-8">
+    <h2 class="text-4xl font-bold section-heading mb-10">About Me</h2>
+    
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- About Text -->
+      <div>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          Hello! I’m <span class="text-teal-400 font-semibold">Lakshmi Poojitha Patchipulusu</span>, 
+          an enthusiastic IT student passionate about technology, coding, and building creative solutions. 
+          I enjoy exploring new tools, solving logical challenges, and transforming ideas into practical projects. 
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          With hands-on experience in <span class="text-teal-400">Python, Java, Web Development, and Cybersecurity</span>, 
+          I have worked on several academic and personal projects ranging from web apps to mini-games. 
+          My goal is to leverage my technical expertise to contribute to impactful real-world applications.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Outside of coding, I love learning new skills, collaborating on innovative projects, and improving my problem-solving abilities every day. 🚀
+        </p>
+      </div>
+
+      <!-- About Image -->
+      <div class="flex justify-center">
+        <img class="w-64 h-64 rounded-2xl object-cover border-4 border-teal-400 shadow-lg hover:scale-105 transition duration-300"
+             src="Images\Professional Photo.jpeg" alt="About Me">
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20 mt-10">
+            <h2 class="text-4xl font-bold section-heading mb-12">Core Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-3 text-teal-400">🐍</div>
+                    <h3 class="text-xl font-semibold mb-2">Languages</h3>
+                    <p class="text-gray-400">Python, Java, C</p>
+                    <p class="text-xs text-gray-500 mt-2">NPTEL Certified</p>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-3 text-teal-400">🌐</div>
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-gray-400">HTML, CSS, JavaScript, Git</p>
+                    <p class="text-xs text-gray-500 mt-2">Front End Certified</p>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-3 text-teal-400">🤖</div>
+                    <h3 class="text-xl font-semibold mb-2">Specialized Tech</h3>
+                    <p class="text-gray-400">Drone Technology, IoT, Embedded Systems</p>
+                    <p class="text-xs text-gray-500 mt-2">40-hour course completion</p>
+                </div>
+                <div class="card p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-3 text-teal-400">🗄️</div>
+                    <h3 class="text-xl font-semibold mb-2">Databases & Tools</h3>
+                    <p class="text-gray-400">SQL, VS Code, Tkinter, Git, Github</p>
+                    <p class="text-xs text-gray-500 mt-2">DBMS & App Dev</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20">
+            <h2 class="text-4xl font-bold section-heading mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+            <!-- Alarm Clock -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS2.png" alt="Alarm Clock" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Alarm Clock</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Tkinter]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Real-time digital clock with alarm functionality</li>
+                    <li>Set, stop, and reset alarms</li>
+                    <li>User-friendly interface</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/Alarm-Clock/blob/main/AlarmClock.py" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+
+            <!-- QR Code Generator -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS1.png" alt="QR Code Generator" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">QR Code Generator</h3>
+                    <p class="text-sm text-gray-400 mb-3">[HTML, CSS, JavaScript]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Generates QR codes from text or URLs</li>
+                    <li>Instant preview and download</li>
+                    <li>Responsive design</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/QRCode-Generator" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- Basic Calculator -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS3.png" alt="Basic Calculator" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Basic Calculator</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Tkinter]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Performs basic arithmetic operations</li>
+                    <li>Clean button-based UI</li>
+                    <li>Error-free calculations</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/Basic-Calculator" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- Mini Google -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS4.png" alt="Mini Google" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Mini Google</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Tkinter]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Google-style search interface</li>
+                    <li>Redirects queries to Google</li>
+                    <li>Minimal UI design</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/MiniGoogle" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- Flappy Bird -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS5.png" alt="Flappy Bird Game" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Flappy Bird Game</h3>
+                    <p class="text-sm text-gray-400 mb-3">[HTML, CSS, JavaScript]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Browser-based interactive game</li>
+                    <li>Gravity, collision detection, and scoring</li>
+                    <li>Responsive gameplay</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/Flappy-Bird-Game" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- Password Generator -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS6.png" alt="Password Generator" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Password Generator</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Tkinter]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Generates secure random passwords</li>
+                    <li>Copy and reset functionality</li>
+                    <li>Simple GUI using Tkinter</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/CODSOFT/blob/main/PASSWORD%20GENERATOR.py" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- Rock Paper Scissors -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS7.png" alt="Rock Paper Scissors" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Rock Paper Scissors</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Tkinter]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>User vs computer gameplay</li>
+                    <li>Randomized computer choice</li>
+                    <li>Score tracking logic</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/CODSOFT/blob/main/ROCK-PAPER-SCISSORS.py" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- To-Do List -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS8.png" alt="To Do List App" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">To-Do List App</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Tkinter]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Add, delete, and mark tasks as completed</li>
+                    <li>Local storage support</li>
+                    <li>Simple and clean UI</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/CODSOFT/blob/main/TO-DO%20LIST.py" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- Text & Voice Translator App -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS10.png" alt="Text and Voice Translator App" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Text & Voice Translator</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Streamlit, Speech Recognition]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Translates text and voice between multiple languages</li>
+                    <li>Speech-to-text and text-to-speech support</li>
+                    <li>Interactive web UI using Streamlit</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/TextAndVoiceTranslator" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+            <!-- Online Quiz App -->
+                <div class="card rounded-xl overflow-hidden flex flex-col">
+                <img src="Images\SS9.png" alt="Online Quiz App" class="h-44 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-1">Online Quiz App</h3>
+                    <p class="text-sm text-gray-400 mb-3">[Python, Tkinter]</p>
+                    <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+                    <li>Multiple-choice quiz application</li>
+                    <li>Score calculation and result display</li>
+                    <li>Interactive GUI using Tkinter</li>
+                    </ul>
+                    <a href="https://github.com/Poojitha1293/Online-Quiz-App" target="_blank"
+                    class="mt-4 text-teal-400 font-semibold hover:text-white w-fit">
+                    View Code →
+                    </a>
+                </div>
+                </div>
+
+            </div>
+        </section>
+        
+    
+   <!-- Experience Section -->
+<section id="experience" class="mb-20">
+  <h2 class="text-4xl font-bold section-heading mb-12">Experience</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Blackbucks Engineers -->
+    <div class="card rounded-xl overflow-hidden flex flex-col p-5 hover:scale-105 transition duration-300">
+
+      <!-- Logo -->
+      <div class="bg-white p-4 flex justify-center">
+        <img src="Images\Blackbucks Logo.jpeg" alt="Blackbucks Logo" class="h-14 object-contain">
+      </div>
+
+      <div class="mt-4 flex flex-col flex-grow">
+        <h3 class="text-lg font-semibold text-white">Blackbucks Engineers</h3>
+        <p class="text-sm text-gray-400">AIMLDS Trainee</p>
+        <p class="text-xs text-gray-500 mb-3">Jan 2025 - Apr 2025 | Guntur, AP</p>
+
+        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+          <li>Worked on AI & ML concepts with practical implementation.</li>
+          <li>Built data-driven mini projects and improved analytical skills.</li>
+        </ul>
+
+        <a href="https://drive.google.com/file/d/19tgP0iCwuVXHLSwcT45xetBY5Jf8wzpg/view?usp=drive_link"
+           target="_blank"
+           class="mt-4 text-teal-400 font-semibold hover:text-white text-sm w-fit">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+
+    <!-- MicroIT -->
+    <div class="card rounded-xl overflow-hidden flex flex-col p-5 hover:scale-105 transition duration-300">
+
+      <!-- Logo -->
+      <div class="bg-white p-4 flex justify-center">
+        <img src="Images\MicroIt Logo.png" alt="MicroIT Logo" class="h-14 object-contain">
+      </div>
+
+      <div class="mt-4 flex flex-col flex-grow">
+        <h3 class="text-lg font-semibold text-white">MicroIT</h3>
+        <p class="text-sm text-gray-400">Front End Development Intern</p>
+        <p class="text-xs text-gray-500 mb-3">2024 | Remote</p>
+
+        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+          <li>Designed responsive UI using HTML, CSS & JavaScript.</li>
+          <li>Improved website performance and user experience.</li>
+        </ul>
+
+        <a href="https://drive.google.com/file/d/1m1u2S0lT2iDW_Wp-jH3Nl922CqAciFUm/view?usp=drive_link"
+           target="_blank"
+           class="mt-4 text-teal-400 font-semibold hover:text-white text-sm w-fit">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+
+    <!-- Pinnacle Labs -->
+    <div class="card rounded-xl overflow-hidden flex flex-col p-5 hover:scale-105 transition duration-300">
+
+      <!-- Logo -->
+      <div class="bg-white p-4 flex justify-center">
+        <img src="Images\Pinnacle Labs Logo .jpeg" alt="Pinnacle Labs Logo" class="h-14 object-contain">
+      </div>
+
+      <div class="mt-4 flex flex-col flex-grow">
+        <h3 class="text-lg font-semibold text-white">Pinnacle Labs</h3>
+        <p class="text-sm text-gray-400">Python Development Intern</p>
+        <p class="text-xs text-gray-500 mb-3">2024 | Remote</p>
+
+        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1 flex-grow">
+          <li>Developed Python-based mini applications.</li>
+          <li>Strengthened logic building and backend skills.</li>
+        </ul>
+
+        <a href="https://drive.google.com/file/d/1vriSseU0NO1eCHM96gFCzxSMKiTiHcDX/view?usp=drive_link"
+           target="_blank"
+           class="mt-4 text-teal-400 font-semibold hover:text-white text-sm w-fit">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Certifications Section -->
+<section id="certifications" class="mb-20">
+  <h2 class="text-4xl font-bold section-heading mb-12">Certifications</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Python Certification -->
+    <div class="card rounded-xl overflow-hidden flex flex-col">
+
+      <!-- Logo -->
+      <div class="bg-white flex justify-center items-center p-6">
+        <img src="Images\nptel-logo.jpg" alt="NPTEL Logo" class="h-16 object-contain">
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">The Joy of Computing Using Python</h3>
+        <p class="text-gray-400 text-sm mb-1">Issued by: NPTEL (IIT Kharagpur)</p>
+        <p class="text-gray-400 text-sm mb-4">Duration: 12 Weeks</p>
+
+        <a href="https://drive.google.com/file/d/1kJy70Q4_F1dpa1LN6_wbP-J6gWz8PTaR/view?usp=drive_link"
+           target="_blank"
+           class="mt-auto text-teal-400 font-semibold hover:text-white w-fit">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+
+    <!-- Java Certification -->
+    <div class="card rounded-xl overflow-hidden flex flex-col">
+
+      <!-- Logo -->
+      <div class="bg-white flex justify-center items-center p-6">
+        <img src="Images\nptel-logo.jpg" alt="NPTEL Logo" class="h-16 object-contain">
+      </div>
+
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Programming in Java</h3>
+        <p class="text-gray-400 text-sm mb-1">Issued by: NPTEL (IIT Kharagpur)</p>
+        <p class="text-gray-400 text-sm mb-4">Duration: 12 Weeks</p>
+
+        <a href="https://drive.google.com/file/d/1eQFZUbaHOndxtkIOsPFdVCKqOWjTE5rs/view?usp=drive_link"
+           target="_blank"
+           class="mt-auto text-teal-400 font-semibold hover:text-white w-fit">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+    <!-- NPTEL C Programming -->
+    <div class="card rounded-xl overflow-hidden flex flex-col">
+      <div class="bg-white p-6 flex justify-center">
+        <img src="Images\nptel-logo.jpg" alt="NPTEL Logo" class="h-16 object-contain">
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-lg font-semibold mb-2">
+          Problem Solving Through Programming in C
+        </h3>
+        <p class="text-gray-400 text-sm mb-1">Issued by: NPTEL (IIT Kharagpur)</p>
+        <p class="text-gray-400 text-sm mb-4">Duration: 12 Weeks</p>
+        <a href="https://drive.google.com/file/d/1K2lF_JMf3oJtWDlHq_5w1M1A4w0XcHQj/view?usp=drive_link" target="_blank"
+           class="mt-auto text-teal-400 font-semibold hover:text-white">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+    <!-- DataFlair Java -->
+    <div class="card rounded-xl overflow-hidden flex flex-col">
+      <div class="bg-white p-6 flex justify-center">
+        <img src="Images\dataflair logo.jpeg" alt="DataFlair Logo" class="h-16 object-contain">
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-lg font-semibold mb-2">Introduction to Java</h3>
+        <p class="text-gray-400 text-sm mb-1">Issued by: DataFlair</p>
+        <p class="text-gray-400 text-sm mb-4">June 2024</p>
+        <a href="https://drive.google.com/file/d/11pXMHD9rW-9hyWsVmEasSM6gFAzgzXKD/view?usp=drive_link" target="_blank"
+           class="mt-auto text-teal-400 font-semibold hover:text-white">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+    <!-- Great Learning CSS -->
+    <div class="card rounded-xl overflow-hidden flex flex-col">
+      <div class="bg-white p-6 flex justify-center">
+        <img src="Images\great learning logo.png" alt="Great Learning Logo" class="h-16 object-contain">
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-lg font-semibold mb-2">
+          Front End Development - CSS
+        </h3>
+        <p class="text-gray-400 text-sm mb-1">Issued by: Great Learning Academy</p>
+        <p class="text-gray-400 text-sm mb-4">June 2024</p>
+        <a href="https://drive.google.com/file/d/1S_kPH0FqaYLVASbjnbcuUn1Phdm36Qs0/view?usp=drive_link" target="_blank"
+           class="mt-auto text-teal-400 font-semibold hover:text-white">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+    <!-- IBM Python 101 -->
+    <div class="card rounded-xl overflow-hidden flex flex-col">
+      <div class="bg-white p-6 flex justify-center">
+        <img src="Images\IBM logo.png" alt="IBM Logo" class="h-16 object-contain">
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <h3 class="text-lg font-semibold mb-2">
+          Python 101 for Data Science
+        </h3>
+        <p class="text-gray-400 text-sm mb-1">
+          Issued by: IBM Cognitive Class
+        </p>
+        <p class="text-gray-400 text-sm mb-4">August 2025</p>
+        <a href="https://drive.google.com/file/d/1LH2er-nspTTCHdCF-9rZ-4XpALZoDovR/view?usp=drive_link" target="_blank"
+           class="mt-auto text-teal-400 font-semibold hover:text-white">
+          View Certificate →
+        </a>
+      </div>
+    </div>
+    <!-- Wipro Java Full Stack -->
+    <div class="card rounded-xl overflow-hidden flex flex-col">
+        <div class="bg-white p-6 flex justify-center">
+            <img src="Images\TalentNext.png" alt="Wipro Logo" class="h-16 object-contain">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-lg font-semibold mb-2">
+            Java Full Stack Certification
+            </h3>
+            <p class="text-gray-400 text-sm mb-1">
+            Issued by: Wipro TalentNext
+            </p>
+            <p class="text-gray-400 text-sm mb-4">October 2025</p>
+            <a href="https://drive.google.com/file/d/1bDDexA7voXs3OzxGTG4Lz5So4OQEyH8s/view?usp=drive_link" target="_blank"
+            class="mt-auto text-teal-400 font-semibold hover:text-white">
+            View Certificate →
+            </a>
+        </div>
+        </div>
+    <!-- Infosys Python -->
+        <div class="card rounded-xl overflow-hidden flex flex-col">
+        <div class="bg-white p-6 flex justify-center">
+            <img src="Images\Infosys Spring Board Logo.png" alt="Infosys Logo" class="h-16 object-contain">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-lg font-semibold mb-2">
+            Basics of Python
+            </h3>
+            <p class="text-gray-400 text-sm mb-1">
+            Issued by: Infosys Springboard
+            </p>
+            <p class="text-gray-400 text-sm mb-4">June 2025</p>
+            <a href="https://drive.google.com/file/d/1hSNgzqW0xpqPGeTKhdbwVHJWzEadzpNt/view?usp=drive_link" target="_blank"
+            class="mt-auto text-teal-400 font-semibold hover:text-white">
+            View Certificate →
+            </a>
+        </div>
+        </div>
+    <!-- Oracle AI Foundations -->
+        <div class="card rounded-xl overflow-hidden flex flex-col">
+        <div class="bg-white p-6 flex justify-center">
+            <img src="Images\Oracle Logo.png" alt="Oracle Logo" class="h-16 object-contain">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-lg font-semibold mb-2">
+            Oracle Certified Foundations Associate
+            </h3>
+            <p class="text-gray-400 text-sm mb-1">
+            Issued by: Oracle University
+            </p>
+            <p class="text-gray-400 text-sm mb-4">November 2025</p>
+            <a href="https://drive.google.com/file/d/1ZjY999ImxpML9z-4W6qrOS1oYbBL7zN1/view?usp=drive_link" target="_blank"
+            class="mt-auto text-teal-400 font-semibold hover:text-white">
+            View Certificate →
+            </a>
+        </div>
+        </div>
+
+
+
+    
+
+
+  </div>
+</section>
+
+
+
+</main>
+    <!-- Contact -->
+  <footer id="contact" class="bg-gray-900 text-white py-16 text-center">
+    <h3 class="text-4xl font-bold mb-3">Connect With Me</h3>
+    <p class="text-gray-300 mb-6">📧 plakshmipoojitha05@gmail.com | 📞 +91 8331853457</p>
+    <div class="flex justify-center space-x-6">
+      <a href="mailto:plakshmipoojitha05@gmail.com" class="hover:text-teal-400">Email</a>
+      <a href="tel:+918331853457" class="hover:text-teal-400">Phone</a>
+      <a href="https://linkedin.com/in/lakshmi-poojitha-patchipulusu-5152992a7" target="_blank" class="hover:text-teal-400">LinkedIn</a>
+      <a href="https://github.com/Poojitha1293" target="_blank" class="hover:text-teal-400">GitHub</a>
+    </div>
+    <p class="text-sm text-gray-500 mt-8">&copy; 2025 Lakshmi Poojitha Patchipulusu</p>
+  </footer>
+
+</body>
+</html>
